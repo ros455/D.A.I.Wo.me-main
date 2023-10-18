@@ -9,6 +9,7 @@ import {Routes, Route} from 'react-router-dom';
 import Profile from './components/profile_page/Profile';
 import Footer from './components/Footer';
 import AnimWave from './components/wave/AnimWave';
+import LogoPage from './components/logo_page/LogoPage';
 import './style/main.scss'
 
 
@@ -33,6 +34,7 @@ function App() {
       <Route path='/faq' element={<FAQPage/>}/>
       <Route path='/contacts' element={<ContactsPage/>}/>
       <Route path='/profile' element={<Profile/>}/>
+      <Route path='/logo' element={<LogoPage/>}/>
       </Routes>
       <Footer/>
     </div>
