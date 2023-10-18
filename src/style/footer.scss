@@ -1,0 +1,82 @@
+@import'./main.scss';
+@import'./tamplates.scss';
+@import'./colors.scss';
+
+.footer{
+    background: #1e1e1e;
+
+}
+.footer_container{
+    max-width: 1260px;
+    min-height: 260px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+
+.footer_nav{
+    padding-top: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @extend %fs-normal;
+    color: $color_purple;
+        img{
+            width: 30px;
+            height: 30px;
+            margin-right: 5px;
+        }
+}
+
+.footer_border{
+    height: 40px;
+    border-top: 1px solid #6d6d6d;
+    background: #1e1e1e;
+
+}
+
+.footer_nav_display{
+    display: flex;
+}
+
+
+@media(max-width: 950px){
+
+    .footer_nav{
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .footer_nav_display{
+        flex-direction: column;
+        width: 100%;
+        a{
+            padding: 10px 0;
+        }
+    }
+
+    .footer_email{
+        padding: 74px 0 0 0;
+    }
+}
+@media(max-width: 400px){
+
+    .footer_nav{
+        align-items: flex-start;
+    }
+
+    .footer_nav_display{
+        align-items: flex-start;
+        padding: 20px 0 0 0;
+    }
+
+    .footer_email{
+
+    }
+}

@@ -1,0 +1,27 @@
+.app__main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.app__main-container > *:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.item-1 {
+  background-color: rgb(118, 0, 173);
+}
+.item-2 {
+  background-color: rgb(235, 63, 0);
+}
+.item-3 {
+  background-color: rgb(4, 223, 212);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  height: 100%;
+  width: 100%;
+}

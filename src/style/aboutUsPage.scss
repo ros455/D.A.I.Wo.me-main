@@ -1,0 +1,605 @@
+@import'./main.scss';
+@import'./tamplates.scss';
+@import'./colors.scss';
+
+//...............About background
+
+.about_us_page{
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    padding-top: 20px;
+    position: relative;
+    margin: auto;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.main_page_background{
+    position: relative;
+    // height: 100%;
+    // width: 100%;
+}
+
+.main_spotlight_one{
+    position: absolute;
+    top: 1501px;
+    right: -20%;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(7, 237, 210, 0.12) 0%, rgba(156, 99, 247, 0.01) 100%);
+    z-index: -99;
+}
+
+.main_spotlight_two{
+    position: absolute;
+    top: 2344px;
+    left: -36%;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(7, 237, 210, 0.12) 0%, rgba(156, 99, 247, 0.01) 100%);
+    z-index: -99;
+}
+
+.main_spotlight_three{
+    position: absolute;
+    top: 2897px;
+    right: -30%;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(7, 237, 210, 0.12) 0%, rgba(156, 99, 247, 0.01) 100%);
+    z-index: -99;
+}
+
+.about_small_animation{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    top: 1250px;
+    /* left: 315px; */
+    z-index: -99;
+    justify-content: center;
+    align-items: center;
+    left: 0%;
+    width: 100%;
+    img{
+        width: 22%;
+    }
+}
+
+
+.about_img_down{
+    width: 100%;
+    position: absolute;
+    top: 2130px;
+    right: -20px;
+    z-index: -99;
+}
+
+//...........................
+.main_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 327px;
+    span{
+        color: $color_purple;
+    }
+}
+
+.title{
+    width: 100%;
+    @extend %title_style;
+    margin-bottom:50px;
+    text-align: center;
+
+}
+
+.description{
+    width: 80%;
+    @extend %subtitle_style;
+    margin-bottom: 50px;
+    text-align: center;
+    
+}
+
+.btn_start{
+    width: 183px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @extend %btn_primary;
+    @extend %fs-normal;
+}
+
+.extra__info_container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 236px;
+    span{
+        color: $color_purple;
+    }
+}
+
+.extra_info_text{
+    color: $color_white;
+    flex: 0 60%;
+}
+
+.extra_info_text_ttitle{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 146%;
+    letter-spacing: 0.04em;
+    margin-bottom: 30px;
+
+}
+
+.extra_info_text_subtitle{
+    width: 90%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.045em;
+}
+
+.extra__info_picture{
+    flex: 0 40%;
+    img{
+        width: 100%;
+    }
+}
+
+// ............About us section
+
+.about_section{
+    // background: url(./../img/logo_second.svg) no-repeat;
+    // background-position: 50% 50%;
+    // background-size: 223px 267px;
+    position: relative;
+    font-weight: 500;
+    width: 100%;
+    font-size: 24px;
+    line-height: 1.5;
+    color: $color_white;
+        span{
+            color: #2b3649;
+        }
+}
+
+.about_section_small{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 173px;
+}
+
+.logo_aboutus{
+    position: absolute;
+    width: 26%;
+    top: 0;
+    left: 36%;
+    height: 50%;
+    margin-top: 57px;
+    z-index: -99;
+}
+
+.first_section_small, .second_section_small{
+    position: absolute;
+    width: 50%;
+    margin: 0 10px;
+    max-width: 320px;
+    min-height: 100px;
+    background: linear-gradient(200.75deg, #07EDD2 2.03%, #9C63F7 93.26%);
+    border-radius: 15px;
+    
+}
+
+
+@keyframes rotate {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    25% {
+        left: 5px; /* Початковий кут обертання */
+        top:5px
+    }
+    50% {
+        left: 7px; /* Початковий кут обертання */
+        top:3px
+    }
+    75% {
+        left: 3px; /* Початковий кут обертання */
+        top:-5px
+    }
+    100% {
+        left: 0; /* Початковий кут обертання */
+        top: 0;
+    }
+}
+
+.first_section_small{
+    left: 0;
+    top: 0;
+    padding: 15px 41.5px;
+    animation: rotate 3s linear infinite; /* Додайте анімацію "spin" */
+    animation-timing-function: ease-in-out; /* Додайте плавність до анімації */
+}
+@keyframes rotate2 {
+    0% {
+        right: 0;
+        top: 0;
+    }
+    25% {
+        right: 5px; /* Початковий кут обертання */
+        top:5px
+    }
+    50% {
+        right: 7px; /* Початковий кут обертання */
+        top:3px
+    }
+    75% {
+        right: 3px; /* Початковий кут обертання */
+        top:-5px
+    }
+    100% {
+        right: 0; /* Початковий кут обертання */
+        top: 0;
+    }
+}
+
+.second_section_small{
+    right: 0;
+    top: 0;
+    padding: 14.5px 16px;
+    animation: rotate2 2s linear infinite; /* Додайте анімацію "spin" */
+    animation-timing-function: ease-in-out; /* Додайте плавність до анімації */
+}
+
+.about_section_big{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 173px;
+}
+
+.first_section_big, .second_section_big{
+    position: absolute;
+    width: 50%;
+    margin: 0 10px;
+    max-width: 400px;
+    min-height: 100px;
+    background: linear-gradient(200.75deg, #07EDD2 2.03%, #9C63F7 93.26%);
+    border-radius: 15px;
+}
+
+.first_section_big{
+    left: 0;
+    top: 0;
+    padding: 14.5px 24.5px;
+    animation: rotate3 3.5s linear infinite; /* Додайте анімацію "spin" */
+    animation-timing-function: ease-in-out; /* Додайте плавність до анімації */
+}
+
+@keyframes rotate3 {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    25% {
+        left: 5px; /* Початковий кут обертання */
+        top:5px
+    }
+    50% {
+        left: 7px; /* Початковий кут обертання */
+        top:3px
+    }
+    75% {
+        left: 3px; /* Початковий кут обертання */
+        top:-5px
+    }
+    100% {
+        left: 0; /* Початковий кут обертання */
+        top: 0;
+    }
+}
+
+.second_section_big{
+    right: 0;
+    top: 0;
+    padding: 16px 26.5px;
+    animation: rotate4 4.5s linear infinite; /* Додайте анімацію "spin" */
+    animation-timing-function: ease-in-out; /* Додайте плавність до анімації */
+}
+
+@keyframes rotate4 {
+    0% {
+        right: 0;
+        top: 0;
+    }
+    25% {
+        right: 5px; /* Початковий кут обертання */
+        top:5px
+    }
+    50% {
+        right: 7px; /* Початковий кут обертання */
+        top:3px
+    }
+    75% {
+        right: 3px; /* Початковий кут обертання */
+        top:-5px
+    }
+    100% {
+        right: 0; /* Початковий кут обертання */
+        top: 0;
+    }
+}
+
+
+.why_daiwo{
+    margin-bottom: 100px;
+    width: 100%;
+    color: $color_white;
+        span{
+            color: #9C63F7;
+        }
+}
+
+.why_daiwo_title{
+    max-width: 550px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 146%;
+    letter-spacing: 0.045em;
+    margin-bottom: 30px;
+}
+
+.why_daiwo_description{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.045em;
+}
+
+.about_daiwo_card{
+    background: url(../../public/img/aboutus_image2.svg) no-repeat;
+    background-position: 100% 50% ;
+    background-size: 608px 523px ;
+}
+
+.daiwo_card{
+    position: relative;
+    margin-bottom: 107px;
+    width: 90%;
+
+}
+
+.daiwo_card_one{
+    max-width: 544px;
+    min-height: 282px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+}
+
+.daiwo_card_two{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 544px;
+    min-height: 269px;
+    top: 0;
+    left: 0;
+    padding: 39px 44px;
+    background-color: $color_gray;
+    border-radius: 15px;
+    transform: translate(-12px ,-10px);
+}
+
+.card_text{
+    color: $color_white;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.045em;
+    
+        span{
+            color: $color_purple;
+        }
+}
+
+.btn_start_card{
+    width: 183px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    @extend %btn_primary;
+    @extend %fs-normal;
+}
+
+.slider_wraper_about_page{
+    display: none;
+}
+
+
+@media(max-width: 800px){
+
+    .extra__info_container{
+        flex-direction: column;
+    }
+
+    .extra_info_text{
+        width: 100%;
+    }
+
+    .extra__info_picture{
+        img{
+            display: none;
+
+        }
+    }
+}
+
+
+@media(max-width: 623px){
+
+    .about_section{
+        display: none;
+    }
+
+    .slider_wraper_about_page{
+        display: block;
+        width: 100%;
+    }
+
+    .slide_item{
+        width: 100%;
+        max-width: 90%;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+            p{
+                color: #fff;
+                width: 60%;
+                span{
+                    color: #2B3649;
+                }
+            }
+    }
+
+}
+@media(max-width: 623px){
+    .daiwo_card_one {
+        min-height: 312px;
+    }
+
+}
+@media(max-width: 527px){
+    .daiwo_card_one {
+    
+     min-height: 341px;
+
+    }
+
+    .extra_info_text_ttitle{
+        font-size: 32px;
+    }
+
+    .extra_info_text_subtitle{
+        font-size: 18px;
+    }
+
+}
+@media(max-width: 464px){
+
+    .container{
+        .main_info{
+            .title{
+                font-size: 32px;
+            }
+        }
+    }
+
+    .description{
+        font-size: 18px;
+    }
+
+    .display_none{
+        display: none;
+    }
+
+
+
+
+    .extra__info_container{
+        margin: 0;
+    }
+
+    .daiwo_card_one {
+        min-height: 373px;
+    }
+
+    .slide_item{
+
+        max-width: 80%;
+            p{
+                color: #fff;
+                width: 90%;
+                span{
+                    color: #2B3649;
+                }
+            }
+    }
+
+}
+
+@media(max-width: 430px){
+    .daiwo_card_one {
+        min-height: 400px;
+    }
+}
+@media(max-width: 409px){
+
+    .daiwo_card_two{
+        padding: 25px;
+    }
+    .card_text{
+        font-size: 18px ;
+    }
+    .daiwo_card_one {
+        min-height: 295px;
+    }
+}
+@media(max-width: 391px){
+
+    .daiwo_card_two{
+
+    }
+    .card_text{
+
+    }
+    .daiwo_card_one {
+        min-height: 323px;
+    }
+}
+@media(max-width: 361px){
+
+    .daiwo_card_two{
+
+    }
+    .card_text{
+
+    }
+    .daiwo_card_one {
+        min-height: 350px;
+    }
+}
+@media(max-width: 339px){
+
+    .daiwo_card_two{
+
+    }
+    .card_text{
+        font-size: 16px;
+    }
+    .daiwo_card_one {
+        min-height: 300px;
+    }
+}

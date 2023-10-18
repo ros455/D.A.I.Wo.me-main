@@ -1,0 +1,57 @@
+
+%title_style{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.5;
+    letter-spacing: 0.045em;
+    color: $color_white;
+}
+
+%subtitle_style{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.045em;
+    color: $color_white;
+}
+
+%btn_primary{
+    background-color: $button_color;
+    color: #0f0f0f;
+    border-radius: 10px;
+}
+
+%btn_secondary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $color_background;
+    border: 1.5px solid $button_color;
+    border-radius: 10px;
+    color: $color_white;
+    text-decoration: none;
+    color: $color_white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+%btn_slider{
+    width: 183px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 50px 50px 50px;
+    background: linear-gradient(90deg, #45B3E0 0%, #8F6EF4 40.09%);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    color: $color_white;
+}
+
+%fs-normal{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}

@@ -1,0 +1,57 @@
+@import'./colors.scss';
+@import'./tamplates.scss';
+
+.App{
+    // max-width: 1440px;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    padding-top: 20px;
+    position: relative;
+    margin: auto;
+    // height: 100%;
+}
+
+
+.background{
+    position: absolute;
+    top: 373px;
+    left: 0;
+    width: 100%;
+    z-index: -99;
+    opacity: 50%;
+
+}
+
+body{
+    height: 100%;
+    font-family: 'Kanit', sans-serif;
+    background: $color_background;
+    // overflow-x: hidden;
+    // overflow: hidden;
+}
+
+.container{
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+h2{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 146%;
+    letter-spacing: 0.045em;
+    color: $color_white;
+}
+
+
+
+
+
+
