@@ -16,8 +16,7 @@ export default function Slide() {
             <div className="popup_cards_one"></div>
             <div className="popup_cards_dublicate">
               <div className="popup_cards_dublicate_sub">
-                За<span> ефективністю </span> D.A.I.Wo нічим не поступається
-                банкам, біржам та інвестиційним фондам.
+              In terms of<span> efficiency </span> D.A.I.Wo is as good as banks, exchanges and investment funds
               </div>
             </div>
           </div>
@@ -27,8 +26,7 @@ export default function Slide() {
             <div className="popup_cards_one"></div>
             <div className="popup_cards_dublicate">
               <div className="popup_cards_dublicate_sub">
-                D.A.I.Wo створений для того, щоб <span>вирішити</span> фінансову
-                проблему кожного жителя планети
+              D.A.I.Wo was created  <span>to solve the financial problem</span> of every inhabitant of the planet
               </div>
             </div>
           </div>
@@ -38,8 +36,8 @@ export default function Slide() {
             <div className="popup_cards_one"></div>
             <div className="popup_cards_dublicate">
               <div className="popup_cards_dublicate_sub">
-                D.A.I.Wo – це платформа, де <span>штучний інтелект</span>{" "}
-                самостійно інвестує та розподіляє кошти.
+              D.A.I.Wo is a platform where <span>artificial intelligence</span>{" "}
+              independently invests and distributes funds.
               </div>
             </div>
           </div>
